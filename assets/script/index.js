@@ -74,11 +74,9 @@ for(let i = 0; i < africa.length; i++){
 
 // a. Suprogramuokite kalkuliatorių taip, kad įrašius skaičius į abu input laukelius ir paspaudus atitinkamą mygtuką su skaičiais būtų atlikta atitinkama aritmetinė operacija. (10 taškai)
 
-let num1 = document.querySelector('input').innerHTML;
-let num2 = document.querySelector('input + input').innerHTML;
+let num1 = document.querySelector('input').innerText;
+let num2 = document.querySelector('input + input').innerText;
 let result = 0;
-
-console.log(num1, num2);
 
 document.getElementById('plus').addEventListener('click', ()=>{
     result = num1 + num2;
@@ -86,7 +84,6 @@ document.getElementById('plus').addEventListener('click', ()=>{
 document.getElementById('minus').addEventListener('click', ()=>{
     result = num1 - num2;
 })
-
 
 // b. Jos rezultatas būtų atvaizduotas <h5> tage. (3 taškai)
 // Pasirinkite patys sau patogiausius metodus tai atlikti.
